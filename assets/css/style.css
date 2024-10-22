@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* outline: 1px  solid red; */
+}
+
+.container {
+    max-width: 1320px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: -12px;
+    padding-right: -12px;
+}
+
+.section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    font-family: "Poppins";
+    max-width: 100%;
+}
+
+.flex-grow {
+    flex-grow: 1;
+    background-color: rgba(246, 227, 0);
+            background-image: url(../image/burger.png);
+            background-size: cover;
+}
+.roadmap {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+}
+
+.outer-box {
+    padding: 10px 45px;
+    background-color: inherit;
+    width: 50%;
+    position: relative;
+}
+
+.content {
+    background-color: #fff;
+    max-width: 568px;
+    padding: 15px 27px;
+    width: 100%;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.head {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+}
+
+.ol-list {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: red;
+    top: 20px;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(50%);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left {
+    position: relative;
+    left: 0;
+}
+
+.right {
+    position: relative;
+    left: 50%;
+}
+
+img[Alt="burger"] {
+    position: absolute;
+}
+
+.left-1 {
+    left: 22%;
+    top: 1%;
+}
+
+.left-2 {
+    left: 5%;
+    top: 36%;
+}
+
+.left-3 {
+    top: 22%;
+    right: 23%;
+}
+
+.right-1 {
+    right: 8%;
+}
+
+.left-4 {
+    bottom: 18%;
+    right: 6%;
+}
+
+.right-2 {
+    bottom: 32%;
+    left: 28%;
+}
+
+.right-3 {
+    bottom: 10%;
+    left: 2%;
+}
+
+.right-4 {
+    right: 27%;
+    bottom: 10%;
+}
+
+.outer-box::after {
+    content: '';
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 1;
+    top: 15px;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+.right::after {
+    left: -9px;
+}
+
+.header {
+    margin-bottom: 44px;
+}
+
+@media (max-width:575.98px) {
+    .outer-box {
+        padding: 10px;
+    }
+
+    .right::after {
+        left: -21%;
+    }
+
+}
+
+@media (max-width:767.98px) {
+    .timeline::after {
+        left: 5%;
+    }
+
+    .right {
+        left: 10%;
+    }
+
+    .left {
+        left: 10%;
+    }
+
+    .timeline::after {
+        bottom: 250px;
+    }
+
+    .left::after {
+        left: -30px;
+    }
+
+    .right::after {
+        left: -29px;
+    }
+
+    .outer-box {
+        width: 90%;
+    }
+
+    .timeline::after {
+        bottom: 180px;
+    }
+
+    img[Alt="burger"] {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .timeline::after {
+        bottom: 200px;
+    }
+}
